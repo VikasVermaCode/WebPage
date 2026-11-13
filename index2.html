@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pooja Verma | SEO Executive & Team Leader</title>
+<meta name="description" content="Pooja Verma - SEO Executive and Team Leader. Technical SEO, on-page SEO, content strategy and organic growth.">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream:#fbf8f3;
+  --peach:#f5d9c9;
+  --brown:#302820;
+  --gold:#b77e32;
+  --muted:#81766b;
+  --line:#e8ded2;
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--brown)}
+a{text-decoration:none;color:inherit}
+.container{width:86%;max-width:1200px;margin:auto}
+header{height:75px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;background:var(--cream);z-index:99;border-bottom:1px solid var(--line)}
+.logo{font:800 28px 'Playfair Display';letter-spacing:-2px}
+.logo span{color:var(--gold)}
+nav{display:flex;align-items:center;gap:24px}
+nav a{font-size:11px;font-weight:700}
+nav a:hover{color:var(--gold)}
+.nav-btn{border:1px solid var(--brown);padding:11px 16px;border-radius:25px}
+.menu{display:none;background:none;border:0;font-size:24px}
+section{scroll-margin-top:80px}
+.hero{background:var(--peach);padding:80px 7%;min-height:610px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;overflow:hidden}
+.eyebrow,.section-label{font-size:10px;letter-spacing:2px;font-weight:800;color:#96734f}
+.eyebrow:before{content:"";display:inline-block;width:25px;height:2px;background:var(--gold);margin-right:10px;vertical-align:middle}
+.hero h1{font:800 clamp(48px,6vw,76px)/1.02 'Playfair Display';margin:25px 0}
+.hero h1 em,.section-title em{color:var(--gold)}
+.hero-copy>p:not(.eyebrow){font-size:14px;line-height:1.9;color:#66584a;max-width:480px}
+.actions{display:flex;gap:20px;align-items:center;margin-top:28px}
+.btn{display:inline-block;padding:14px 20px;background:var(--brown);color:white;font-size:11px;font-weight:700}
+.link-btn{font-size:11px;font-weight:700;border-bottom:1px solid;padding-bottom:5px}
+.hero-meta{font-size:10px;color:#806c58;margin-top:45px;letter-spacing:1px}
+.mockup{position:relative;min-height:420px;display:flex;justify-content:center;align-items:center}
+.mockup-back{position:absolute;width:65%;height:360px;right:0;top:10px;background:#eee4d8;padding:30px;transform:rotate(4deg)}
+.mockup-back h3{font:700 32px 'Playfair Display';margin-top:70px}
+.mockup-back p{font-size:10px;margin-top:12px}
+.mockup-front{position:relative;z-index:2;width:90%;max-width:480px;background:white;padding:22px;box-shadow:0 20px 60px #6e554333}
+.mock-nav{display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding-bottom:13px;font-size:9px}
+.mock-banner{background:#f7f0e8;padding:30px 20px;margin-top:15px;display:flex;justify-content:space-between;align-items:center}
+.mock-banner small{font-size:8px;letter-spacing:1px;color:#927b60}
+.mock-banner h2{font:700 29px/1.1 'Playfair Display';margin:12px 0}
+.mock-banner h2 span{color:var(--gold)}
+.mock-banner p{font-size:9px;color:#81766b}
+.circle{width:90px;height:90px;border:1px solid #c5a77e;border-radius:50%;display:grid;place-items:center;color:var(--gold);font:700 21px 'Playfair Display'}
+.mock-bottom{display:grid;grid-template-columns:repeat(3,1fr);padding-top:20px;gap:10px}
+.mock-bottom b{font-size:9px;display:block}
+.mock-bottom small{font-size:8px;color:#999}
+.float-label{position:absolute;z-index:3;right:0;bottom:5px;background:var(--brown);color:white;padding:15px;font-size:9px}
+.stats-strip{background:var(--brown);color:white;display:grid;grid-template-columns:repeat(3,1fr);padding:25px 7%;text-align:center}
+.stats-strip strong{display:block;color:#e0b47d;font:700 27px 'Playfair Display'}
+.stats-strip span{font-size:10px;color:#ddd0c2}
+.section{padding:90px 7%}
+.section-title{font:700 clamp(36px,4.5vw,55px)/1.1 'Playfair Display';margin:18px 0 35px}
+.section-intro{max-width:650px;font-size:13px;line-height:1.9;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:start}
+.about-grid p{font-size:13px;line-height:2;color:var(--muted)}
+.skills-section{background:#f0ece5}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skill{padding:26px;background:white;min-height:195px}
+.skill:nth-child(3n+1){background:#f4dfd1}
+.skill:nth-child(3n+2){background:#fffaf2}
+.skill:nth-child(3n){background:#e8e5ec}
+.skill small{color:#a17c55;font-size:10px}
+.skill h3{font:700 21px 'Playfair Display';margin:25px 0 10px}
+.skill p{font-size:11px;line-height:1.8;color:#756b60}
+.demo-label{display:inline-block;background:#5b4734;color:#ffe5bd;padding:9px 13px;font-size:9px;letter-spacing:1px;margin-bottom:25px}
+.performance{background:var(--brown);color:white}
+.performance .section-label{color:#e0b47d}
+.performance .section-title em{color:#e0b47d}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.metric{background:#3c352d;border:1px solid #51483d;padding:25px}
+.metric strong{display:block;font:700 34px 'Playfair Display';color:#e0b47d}
+.metric span{font-size:12px;display:block;margin-top:7px}
+.metric small{display:block;font-size:9px;color:#c4b7a8;margin-top:8px}
+.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.case{background:white;border:1px solid var(--line)}
+.case-banner{height:190px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+.case:nth-child(1) .case-banner{background:#e9d3c1}
+.case:nth-child(2) .case-banner{background:#d8ded2}
+.case:nth-child(3) .case-banner{background:#d9d1e0}
+.case:nth-child(4) .case-banner{background:#d6e0df}
+.case:nth-child(5) .case-banner{background:#e9dfc7}
+.case:nth-child(6) .case-banner{background:#e5d0c8}
+.case-banner small{font-size:9px;letter-spacing:2px}
+.case-banner h3{font:700 30px 'Playfair Display'}
+.case-body{padding:22px}
+.case-body p{font-size:11px;line-height:1.8;color:var(--muted);margin:9px 0}
+.case-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
+.case-tags span{background:#f4eee7;padding:7px 9px;font-size:9px}
+.articles{background:#f0ece5}
+.article-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.article{background:#fff;padding:25px;border:1px solid var(--line)}
+.article small{color:var(--gold);font-size:9px;letter-spacing:1px}
+.article h3{font:700 22px 'Playfair Display';margin:15px 0}
+.article p{font-size:11px;line-height:1.8;color:var(--muted)}
+.article a{display:inline-block;font-size:10px;font-weight:700;margin-top:18px;border-bottom:1px solid;padding-bottom:5px}
+.writing{border-left:3px solid var(--gold);padding:20px 25px;background:#f6eee6;margin-bottom:14px}
+.writing h3{font:700 20px 'Playfair Display';margin-bottom:8px}
+.writing p{font-size:11px;line-height:1.8;color:var(--muted)}
+.tool-cloud{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.tool-cloud span{border:1px solid #d7c5b2;border-radius:30px;padding:12px 17px;font-size:11px;background:#fffaf4}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.cert{padding:22px;background:#f2eee7}
+.cert h3{font:700 17px 'Playfair Display';margin-bottom:8px}
+.cert p{font-size:10px;color:var(--muted);line-height:1.7}
+.timeline{border-top:1px solid var(--line)}
+.job{display:grid;grid-template-columns:1fr 2fr;padding:23px 0;border-bottom:1px solid var(--line);gap:20px}
+.job time{font-size:11px;color:var(--muted)}
+.job h3{font:700 20px 'Playfair Display'}
+.job p{font-size:11px;color:var(--muted);margin-top:6px}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:40px}
+.education h3{font:700 18px 'Playfair Display';margin:15px 0 5px}
+.education p{font-size:11px;color:var(--muted);line-height:1.8}
+.faq-section{background:#f0ece5}
+details{padding:20px 0;border-bottom:1px solid #d8cec2}
+summary{cursor:pointer;font:700 16px 'Playfair Display'}
+details p{font-size:12px;line-height:1.8;color:var(--muted);padding-top:15px;max-width:800px}
+.contact{background:var(--brown);color:white;padding:85px 7% 25px}
+.contact .section-label{color:#e0b47d}
+.contact h2{font:700 clamp(45px,7vw,75px)/1.05 'Playfair Display';margin:25px 0}
+.contact h2 em{color:#e0b47d}
+.contact>p{font-size:12px;color:#c7b9a9}
+.contact-links{display:flex;flex-wrap:wrap;gap:30px;margin:40px 0 75px}
+.contact-links a{font-size:11px;border-bottom:1px solid #8b7864;padding-bottom:8px}
+footer{border-top:1px solid #5b5147;padding-top:20px;display:flex;justify-content:space-between;gap:15px;font-size:9px;color:#c2b5a7}
+@media(max-width:850px){
+ nav{gap:12px}nav a{font-size:9px}
+ .hero{grid-template-columns:1fr;padding-top:55px}
+ .mockup{min-height:390px}
+ .skills-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+ header{height:65px}
+ .menu{display:block}
+ nav{display:none;position:absolute;top:65px;left:0;right:0;background:var(--cream);padding:25px;flex-direction:column;align-items:flex-start}
+ nav.open{display:flex}
+ .hero{padding:55px 7% 35px}
+ .hero h1{font-size:50px}
+ .mockup{min-height:350px}
+ .mockup-front{width:95%;padding:15px}
+ .mock-banner{padding:22px 12px}
+ .mock-banner h2{font-size:23px}
+ .circle{width:70px;height:70px;font-size:17px}
+ .section{padding:65px 7%}
+ .about-grid,.education{grid-template-columns:1fr;gap:20px}
+ .skills-grid,.metrics,.case-grid,.article-grid,.cert-grid{grid-template-columns:1fr}
+ .stats-strip{padding:20px 4%;gap:10px}
+ .stats-strip strong{font-size:22px}
+ .stats-strip span{font-size:8px}
+ .job{grid-template-columns:1fr;gap:8px}
+ .contact-links{flex-direction:column;gap:20px}
+ footer{flex-wrap:wrap}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="#home">PV<span>.</span></a>
+  <button class="menu" id="menu">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#cases">Case Studies</a>
+    <a href="#articles">Articles</a>
+    <a href="#tools">Tools</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="nav-btn">Contact ↗</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow">SEO PROFESSIONAL · ORGANIC GROWTH</div>
+    <h1>SEO Executive<br>Driving <em>Growth.</em></h1>
+    <p>
+      Hi, I'm <b>Pooja Verma</b>, Senior SEO Executive and Team Leader.
+      I help brands improve search visibility through technical SEO,
+      keyword research, content optimisation and data-driven strategies.
+    </p>
+    <div class="actions">
+      <a class="btn" href="#cases">View Case Studies ↗</a>
+      <a class="link-btn" href="#contact">Contact Me</a>
+    </div>
+    <div class="hero-meta">GURUGRAM, HARYANA · SEO & DIGITAL MARKETING</div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-back">
+      <small>SEO PERFORMANCE / INSIGHTS</small>
+      <h3>Search visibility<br><em>that grows.</em></h3>
+      <p>Research · Optimise · Measure · Improve</p>
+    </div>
+    <div class="mockup-front">
+      <div class="mock-nav">
+        <b>PV.</b>
+        <span>ABOUT &nbsp; WORK &nbsp; SKILLS &nbsp; CONTACT</span>
+      </div>
+      <div class="mock-banner">
+        <div>
+          <small>YOUR ORGANIC GROWTH PARTNER</small>
+          <h2>Make your brand <span>discoverable.</span></h2>
+          <p>Smart SEO strategies for sustainable growth.</p>
+        </div>
+        <div class="circle">SEO</div>
+      </div>
+      <div class="mock-bottom">
+        <div><b>TECHNICAL SEO</b><small>Website health</small></div>
+        <div><b>CONTENT</b><small>Search intent</small></div>
+        <div><b>GROWTH</b><small>Organic results</small></div>
+      </div>
+    </div>
+    <div class="float-label">Strategy first. Results always.</div>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div><strong>4.5+</strong><span>Years of SEO Experience*</span></div>
+  <div><strong>SEO</strong><span>Technical & Content Strategy</span></div>
+  <div><strong>360°</strong><span>Search Optimisation Approach</span></div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-label">01 / ABOUT ME</div>
+  <div class="about-grid">
+    <h2 class="section-title">Turning search into <em>opportunity.</em></h2>
+    <div>
+      <p>
+        I am Pooja Verma, an SEO professional with experience in
+        search engine optimisation, digital marketing and team leadership.
+        I work on improving website visibility, understanding search intent
+        and building effective optimisation strategies.
+      </p>
+      <br>
+      <p>
+        My professional experience includes technical audits, on-page SEO,
+        off-page SEO, local SEO, keyword research, content strategy,
+        reporting, project coordination and team mentoring.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills-section" id="skills">
+  <div class="section-label">02 / CORE SEO COMPETENCIES</div>
+  <h2 class="section-title">What I <em>specialise in.</em></h2>
+
+  <div class="skills-grid">
+    <article class="skill">
+      <small>01 / OPTIMISATION</small>
+      <h3>On-Page SEO</h3>
+      <p>Meta titles, descriptions, heading structure, keyword mapping, internal linking and content optimisation.</p>
+    </article>
+    <article class="skill">
+      <small>02 / WEBSITE HEALTH</small>
+      <h3>Technical SEO</h3>
+      <p>Technical audits, crawlability, indexation, website structure and identification of SEO issues.</p>
+    </article>
+    <article class="skill">
+      <small>03 / AUTHORITY</small>
+      <h3>Off-Page SEO</h3>
+      <p>Off-page optimisation, backlink activities and strategies to strengthen website authority.</p>
+    </article>
+    <article class="skill">
+      <small>04 / LOCAL VISIBILITY</small>
+      <h3>Local SEO</h3>
+      <p>Local keyword research, location-based optimisation and improving local search visibility.</p>
+    </article>
+    <article class="skill">
+      <small>05 / RESEARCH</small>
+      <h3>Keyword & Content Strategy</h3>
+      <p>Keyword research, competitor analysis, search intent and content planning.</p>
+    </article>
+    <article class="skill">
+      <small>06 / LEADERSHIP</small>
+      <h3>Team & Project Management</h3>
+      <p>Team mentoring, SOP development, client coordination and KPI reporting.</p>
+    </article>
+  </div>
+</section>
+
+<!-- PERFORMANCE -->
+<section class="section performance" id="performance">
+  <div class="section-label">03 / SEO PERFORMANCE</div>
+  <h2 class="section-title">Organic growth <em>in numbers.</em></h2>
+  <div class="demo-label">ILLUSTRATIVE DEMO DATA — NOT VERIFIED CLIENT RESULTS</div>
+
+  <div class="metrics">
+    <div class="metric">
+      <strong>+68%</strong>
+      <span>Organic Click Growth</span>
+      <small>Demo: 12,500 → 21,000</small>
+    </div>
+    <div class="metric">
+      <strong>+92%</strong>
+      <span>Search Impressions</span>
+      <small>Demo: 210K → 403K</small>
+    </div>
+    <div class="metric">
+      <strong>18 → 47</strong>
+      <span>Keywords in Top 10</span>
+      <small>Illustrative ranking improvement</small>
+    </div>
+    <div class="metric">
+      <strong>+54%</strong>
+      <span>Organic Sessions</span>
+      <small>Demo: 16,000 → 24,640</small>
+    </div>
+    <div class="metric">
+      <strong>+31%</strong>
+      <span>Organic Leads</span>
+      <small>Demo: 160 → 210</small>
+    </div>
+    <div class="metric">
+      <strong>22.4 → 14.8</strong>
+      <span>Average Position</span>
+      <small>Illustrative improvement</small>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section" id="cases">
+  <div class="section-label">04 / FEATURED CASE STUDIES</div>
+  <h2 class="section-title">Selected <em>client projects.</em></h2>
+  <p class="section-intro">
+    A selection of projects and clients from my professional experience.
+    Detailed case studies and verified performance results can be added
+    when client data is available.
+  </p>
+  <br>
+
+  <div class="case-grid">
+    <article class="case">
+      <div class="case-banner">
+        <small>TRAVEL / VISA</small>
+        <h3>UAE Visa Online</h3>
+      </div>
+      <div class="case-body">
+        <h3>Search Visibility & Optimisation</h3>
+        <p>SEO project involving search optimisation for a travel and visa website.</p>
+        <div class="case-tags"><span>Keyword Research</span><span>On-Page SEO</span><span>Technical SEO</span></div>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-banner">
+        <small>EVENTS</small>
+        <h3>Jannat Events</h3>
+      </div>
+      <div class="case-body">
+        <h3>Website SEO</h3>
+        <p>SEO contribution for an events-related client project.</p>
+        <div class="case-tags"><span>On-Page SEO</span><span>Content</span><span>Keyword Research</span></div>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-banner">
+        <small>EDUCATION</small>
+        <h3>Jamboree India</h3>
+      </div>
+      <div class="case-body">
+        <h3>Education Search Optimisation</h3>
+        <p>SEO contribution for an education and learning-related website.</p>
+        <div class="case-tags"><span>Keyword Research</span><span>Content Strategy</span></div>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-banner">
+        <small>TRAVEL / VISA</small>
+        <h3>Dubai Visits Visa</h3>
+      </div>
+      <div class="case-body">
+        <h3>Travel Website SEO</h3>
+        <p>SEO work for a travel and visa website, including optimisation activities.</p>
+        <div class="case-tags"><span>Technical SEO</span><span>On-Page SEO</span></div>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-banner">
+        <small>PRODUCTS</small>
+        <h3>Trimurti Products</h3>
+      </div>
+      <div class="case-body">
+        <h3>Product Website SEO</h3>
+        <p>SEO contribution for a product-focused business website.</p>
+        <div class="case-tags"><span>Keyword Research</span><span>SEO Audit</span></div>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-banner">
+        <small>CLIENT PROJECT</small>
+        <h3>S Gujar</h3>
+      </div>
+      <div class="case-body">
+        <h3>SEO Project</h3>
+        <p>Client project included in my professional SEO portfolio.</p>
+        <div class="case-tags"><span>SEO Strategy</span><span>Optimisation</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="section articles" id="articles">
+  <div class="section-label">05 / LATEST ARTICLES</div>
+  <h2 class="section-title">SEO knowledge & <em>insights.</em></h2>
+
+  <div class="article-grid">
+    <article class="article">
+      <small>TECHNICAL SEO</small>
+      <h3>Technical SEO Audit: A Practical Checklist</h3>
+      <p>A guide to reviewing crawlability, indexation, site structure and common technical SEO issues.</p>
+      <a href="mailto:pjvm7065@gmail.com?subject=SEO%20Article">REQUEST ARTICLE ↗</a>
+    </article>
+    <article class="article">
+      <small>KEYWORD RESEARCH</small>
+      <h3>How to Find the Right Keywords</h3>
+      <p>Understanding search intent, keyword opportunities and competitor research for better SEO planning.</p>
+      <a href="mailto:pjvm7065@gmail.com?subject=SEO%20Article">REQUEST ARTICLE ↗</a>
+    </article>
+  </div>
+</section>
+
+<!-- WRITING -->
+<section class="section">
+  <div class="section-label">06 / MY WRITING</div>
+  <h2 class="section-title">Content that <em>connects.</em></h2>
+
+  <div class="writing">
+    <h3>SEO Content & Website Copy</h3>
+    <p>Content planning and optimisation focused on search intent, relevance and website visibility.</p>
+  </div>
+  <div class="writing">
+    <h3>Digital Marketing Content</h3>
+    <p>Content development and digital marketing support for different client requirements.</p>
+  </div>
+  <p class="section-intro">Writing samples and published article links can be added here.</p>
+</section>
+
+<!-- TOOLS -->
+<section class="section skills-section" id="tools">
+  <div class="section-label">07 / SEO STACK & CERTIFICATIONS</div>
+  <h2 class="section-title">My SEO <em>toolkit.</em></h2>
+
+  <div class="tool-cloud">
+    <span>Google Analytics 4</span>
+    <span>Google Search Console</span>
+    <span>Google Tag Manager</span>
+    <span>Ahrefs</span>
+    <span>SEMrush</span>
+    <span>Screaming Frog</span>
+    <span>Moz</span>
+    <span>SE Ranking</span>
+    <span>WordPress</span>
+    <span>Canva</span>
+    <span>Basic HTML</span>
+  </div>
+
+  <h2 class="section-title" style="margin-top:55px">Certifications & <em>Education.</em></h2>
+  <div class="cert-grid">
+    <div class="cert">
+      <h3>Web Designing</h3>
+      <p>Anudip Foundation<br>Oct 2024 – Mar 2025</p>
+    </div>
+    <div class="cert">
+      <h3>SEO Strategies</h3>
+      <p>My Great Learning<br>Feb 2025</p>
+    </div>
+    <div class="cert">
+      <h3>Digital Marketing</h3>
+      <p>Anudip Foundation<br>Oct 2021 – Feb 2022</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="section-label">08 / PROFESSIONAL JOURNEY</div>
+  <h2 class="section-title">Work <em>experience.</em></h2>
+
+  <div class="timeline">
+    <article class="job">
+      <time>Nov 2025 – Present</time>
+      <div>
+        <h3>Senior SEO Executive & Team Leader</h3>
+        <p>Boolment Software Development</p>
+      </div>
+    </article>
+    <article class="job">
+      <time>Feb 2023 – Aug 2025</time>
+      <div>
+        <h3>Senior SEO Executive</h3>
+        <p>eSEO Solutions</p>
+      </div>
+    </article>
+    <article class="job">
+      <time>Aug 2022 – Feb 2023</time>
+      <div>
+        <h3>Digital Marketing Executive</h3>
+        <p>Crave Ideas Advertising</p>
+      </div>
+    </article>
+    <article class="job">
+      <time>Feb 2022 – Mar 2022</time>
+      <div>
+        <h3>Social Media Intern</h3>
+        <p>Prontosys</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="education">
+    <div>
+      <div class="section-label">EDUCATION</div>
+      <h3>Bachelor of Commerce</h3>
+      <p>Delhi University (SOL) · 2019–2022</p>
+      <h3>12th — Commerce</h3>
+      <p>Haryana Board · 2018</p>
+    </div>
+    <div>
+      <div class="section-label">PROFESSIONAL FOCUS</div>
+      <h3>SEO & Digital Marketing</h3>
+      <p>Technical optimisation, content strategy, analytics, reporting and team leadership.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="section-label">09 / FREQUENTLY ASKED QUESTIONS</div>
+  <h2 class="section-title">A little more <em>about my work.</em></h2>
+
+  <details>
+    <summary>What are your core SEO skills?</summary>
+    <p>My core skills include technical SEO, on-page SEO, off-page SEO, local SEO, keyword research, content strategy and SEO reporting.</p>
+  </details>
+
+  <details>
+    <summary>Which SEO tools do you use?</summary>
+    <p>I work with Google Analytics 4, Google Search Console, Google Tag Manager, Ahrefs, SEMrush, Screaming Frog, Moz and SE Ranking.</p>
+  </details>
+
+  <details>
+    <summary>Do you have team leadership experience?</summary>
+    <p>Yes. My current role includes Senior SEO Executive and Team Leader responsibilities, including team mentoring, project coordination and SOP development.</p>
+  </details>
+
+  <details>
+    <summary>What kind of SEO projects have you worked on?</summary>
+    <p>My portfolio includes travel and visa, education, events and product-related client projects.</p>
+  </details>
+
+  <details>
+    <summary>How do you measure SEO performance?</summary>
+    <p>I use performance indicators such as organic clicks, impressions, organic sessions, keyword positions and relevant conversions, supported by analytics and search reporting tools.</p>
+  </details>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-label">10 / LET'S CONNECT</div>
+  <h2>Let's drive<br><em>organic growth.</em></h2>
+  <p>Available for SEO opportunities, collaborations and digital marketing projects.</p>
+
+  <div class="contact-links">
+    <a href="mailto:pjvm7065@gmail.com">pjvm7065@gmail.com ↗</a>
+    <a href="https://linkedin.com/in/pooja-verma-945539232/" target="_blank" rel="noopener">LinkedIn Profile ↗</a>
+    <a href="tel:+917011975500">+91 70119 75500 ↗</a>
+  </div>
+
+  <footer>
+    <span>© <span id="year"></span> Pooja Verma</span>
+    <span>SEO Specialist Portfolio</span>
+    <a href="#home">Back to Top ↑</a>
+  </footer>
+</section>
+
+<script>
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
+
+menu.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
+
+nav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => nav.classList.remove("open"));
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
